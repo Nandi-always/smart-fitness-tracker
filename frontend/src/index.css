@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-900 transition-colors duration-300;
+  font-family: 'Inter', sans-serif;
+}
+
+.dark body {
+  @apply bg-[#0f1115] text-white;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f1115; 
+}
+::-webkit-scrollbar-thumb {
+  background: #1c1e26; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #333; 
+}
